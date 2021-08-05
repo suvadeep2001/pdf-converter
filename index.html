@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Images to PDF Web App in Node and Express</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <br><br>
+        <h1 class="text-center">
+            Choose your .jpg / .png / .jpeg files
+        </h1>
+        <br>
+        <form action="/merge" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <input type="file" name="files" multiple required class="form-control">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-danger btn-block">
+                    Convert to PDF
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</html>
