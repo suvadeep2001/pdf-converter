@@ -4,7 +4,16 @@
 <head>
     <title>Images to PDF Web App in Node and Express</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        body {
+            background-image: url('https://cdn.pixabay.com/photo/2021/06/27/14/32/raspberry-6368999__340.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 750px;
+        }
+    </style>
 </head>
 
 <body>
@@ -18,8 +27,9 @@
             <div class="form-group">
                 <input type="file" name="files" multiple required class="form-control">
             </div>
-            <div class="form-group">
-                <button class="btn btn-danger btn-block">
+            <div class="form-group ">
+                <button class="btn btn-warning btn-block"
+                    style="padding: 20px 20px; width: 250px; position: relative; top: 50%; left: 40%;">
                     Convert to PDF
                 </button>
             </div>
